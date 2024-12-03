@@ -38,6 +38,15 @@ nav button {
     font-size: 1.5rem;
 }
 
+#food{
+    max-width: 90vw;
+}
+
+.caption {
+    font-style: italic;
+    font-size: 1rem;
+}
+
 @media(min-width: 600px){
     #logo{
         width: 50%;
@@ -45,4 +54,10 @@ nav button {
         max-width: 400px;
         max-height: 200px;
     }
+
+    #food{
+        width: 30%;
+        height: 30%;
+    }
+    
 }
