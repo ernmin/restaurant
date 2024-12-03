@@ -29,6 +29,14 @@ nav button {
     max-height: 100px;
 }
 
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 #content {
     display: flex;
     flex-direction: column;

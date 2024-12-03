@@ -2,12 +2,15 @@ export function image_logo(logo) {
     const image = document.createElement("img");
     image.src = logo;
     image.id = 'logo';
+    const header = document.querySelector('#header');
+    header.appendChild(image);
+}
+
+export function image_logo_text(){
     const content = document.querySelector('#content');
-    content.appendChild(image);
     const welcome = document.createElement("div");
     welcome.textContent = "Welcome to The Assembly Ground";
     content.appendChild(welcome);
-    //content.textContent = "Welcome to Assembly Ground";
 }
 
 export function image_food(food) {
