@@ -1,3 +1,8 @@
+header{
+    gap: 20px;
+    font-size: 1.5rem;
+}
+
 body{ 
     background-color: #eeedd3;
     display: flex;
@@ -53,6 +58,33 @@ nav button {
 .caption {
     font-style: italic;
     font-size: 1rem;
+}
+
+.menu-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#menu-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+figcaption {
+    font-size: 1rem;
+}
+
+.menu-item img {
+    border-radius: 6px;
+    max-height: 300px;
+    min-height: 250px;
+    max-width: 80vw;
 }
 
 @media(min-width: 600px){

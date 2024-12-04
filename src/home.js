@@ -7,13 +7,14 @@ export function image_logo(logo) {
 }
 
 export function image_logo_text(){
-    const content = document.querySelector('#content');
+    const content = document.querySelector('#header');
     const welcome = document.createElement("div");
     welcome.textContent = "Welcome to The Assembly Ground";
     content.appendChild(welcome);
 }
 
 export function image_food(food) {
+    
     const food_image = document.createElement("img");
     food_image.src = food;
     food_image.id = 'food';
