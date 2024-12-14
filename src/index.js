@@ -2,9 +2,11 @@ import "./styles.css";
 import logo from "./AssemblyGround_logo.png";
 import food from "./poetry-and-food.jpeg";
 import cheese from "./cheese.jpeg";
-import meat from "./cured-meat.jpg"
+import meat from "./cured-meat.jpg";
+import cafe from "./cafe.jpeg";
 import { image_logo, image_food, image_logo_text } from './home.js';
 import { image_cheese, menu_header_text, image_meat, menu_layout } from './menu.js';
+import { about_header_text, about_image, about_text } from "./about.js";
 
 image_logo(logo);
 image_logo_text();
@@ -37,4 +39,10 @@ menu.addEventListener('click', () => {
     image_meat(meat)
     
 });
-about.addEventListener('click', remove_content);
+about.addEventListener('click', () =>{
+    remove_content();
+    about_header_text();
+    about_image(cafe);
+    about_text();
+
+});
